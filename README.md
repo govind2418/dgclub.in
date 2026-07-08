@@ -32,7 +32,7 @@ This produces a static site in `out/` (via `output: "export"` in `next.config.ts
 
 ## Before going live — checklist
 
-- [ ] Replace the hero visual placeholder at `public/hero-banner.jpg` (referenced in `src/components/home/Hero.tsx`) with the final banner image.
+- [x] Hero visual set at `public/hero-banner.png` (referenced in `src/components/home/Hero.tsx`) — swap the file directly if it changes later.
 - [ ] Replace `LICENSE_PLACEHOLDER` in `src/lib/constants.ts` with the real license/registration text (shown in the Footer, Terms and Responsible Gaming pages).
 - [ ] Replace `EXTERNAL_REGISTER_URL`, `EXTERNAL_LOGIN_URL`, `APK_DOWNLOAD_URL`, `TELEGRAM_URL` and `CONTACT_EMAIL` in `src/lib/constants.ts` with the real destinations.
 - [ ] Have counsel review the Privacy Policy, Terms, Responsible Gaming and Disclaimer pages (`src/app/{privacy-policy,terms,responsible-gaming,disclaimer}`) — the shipped copy is a reasonable template, not legal advice.

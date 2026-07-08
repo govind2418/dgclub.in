@@ -166,20 +166,18 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Luxury framed hero visual — drop the banner at public/hero-banner.jpg */}
+        {/* Luxury framed hero visual */}
         <div data-hero-frame className="relative mx-auto w-full max-w-md [perspective:1200px] lg:max-w-none">
-          <div className="pointer-events-none absolute -inset-6 -z-10 rounded-[2.5rem] bg-gold/10 blur-2xl" />
-          <div className="relative rounded-[1.75rem] bg-gradient-to-br from-gold-light via-gold to-gold-light/60 p-[2px] shadow-gold-glow-lg">
+          <div className="relative rounded-[1.75rem] bg-gradient-to-br from-gold-light via-gold to-gold-light/60 p-[2px]">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[calc(1.75rem-2px)] bg-elevated">
               <Image
-                src="/hero-banner.jpg"
+                src="/hero-banner.png"
                 alt="Dg Club — India's premium gaming platform"
                 fill
                 priority
                 sizes="(min-width: 1024px) 45vw, 90vw"
                 className="object-cover"
               />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-base/40 via-transparent to-transparent" />
             </div>
 
             {/* Corner accents */}
