@@ -24,7 +24,7 @@ export function FeatureCards() {
           const Icon = iconMap[feature.icon];
           return (
             <Reveal key={feature.title} delay={i * 0.08}>
-              <GlassCard glow className="group h-full">
+              <GlassCard glow accent className="group h-full">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10 text-gold-light transition-transform duration-300 group-hover:scale-110">
                   <Icon className="h-6 w-6" />
                 </div>

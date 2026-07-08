@@ -28,6 +28,7 @@ export function GameCategories({ compact = false }: { compact?: boolean }) {
           return (
             <Reveal key={game.slug} type="scale" delay={i * 0.06}>
               <div className="group relative overflow-hidden rounded-2xl border border-gold/15 bg-surface/40 p-7 backdrop-blur-md transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-gold-glow">
+                <span className="pointer-events-none absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-gold via-gold-light to-red" />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-gold/0 via-gold/0 to-gold/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold-light/20 to-gold/10 text-gold-light transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
                   <Icon className="h-7 w-7" />

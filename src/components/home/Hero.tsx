@@ -26,12 +26,18 @@ export function Hero() {
       if (cancelled) return;
 
       ctx = gsap.context(() => {
+        // Only animate transform (never opacity) on content that's already
+        // visible in the static HTML — animating opacity here would mean a
+        // visible flash (rendered -> yanked to invisible -> replayed) once
+        // this dynamically-imported script finally executes on slower
+        // connections. Purely decorative bits (floating coins) can still
+        // use opacity since they're not core content and hidden on mobile.
         const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-        tl.from("[data-hero-badge]", { y: 16, opacity: 0, duration: 0.6 })
-          .from("[data-hero-line]", { y: 40, opacity: 0, duration: 0.8, stagger: 0.12 }, "-=0.3")
-          .from("[data-hero-desc]", { y: 16, opacity: 0, duration: 0.6 }, "-=0.4")
-          .from("[data-hero-cta]", { y: 16, opacity: 0, duration: 0.6, stagger: 0.1 }, "-=0.4")
-          .from("[data-hero-frame]", { scale: 0.9, opacity: 0, duration: 0.9, ease: "power3.out" }, "-=0.9")
+        tl.from("[data-hero-badge]", { y: 16, duration: 0.6 })
+          .from("[data-hero-line]", { y: 40, duration: 0.8, stagger: 0.12 }, "-=0.3")
+          .from("[data-hero-desc]", { y: 16, duration: 0.6 }, "-=0.4")
+          .from("[data-hero-cta]", { y: 16, duration: 0.6, stagger: 0.1 }, "-=0.4")
+          .from("[data-hero-frame]", { scale: 0.96, duration: 0.9, ease: "power3.out" }, "-=0.9")
           .from(
             "[data-hero-coin]",
             { scale: 0, opacity: 0, duration: 0.6, stagger: 0.08, ease: "back.out(1.7)" },
@@ -79,7 +85,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section ref={rootRef} className="relative flex min-h-[100svh] items-center overflow-hidden bg-base pt-28">
+    <section ref={rootRef} className="relative flex min-h-[100svh] items-center overflow-hidden bg-base pt-32">
       {/* Background layer — placeholder cover banner. Swap for a real photo via <Image> when available. */}
       <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_20%_20%,rgba(107,16,25,0.55),transparent_55%),radial-gradient(circle_at_80%_0%,rgba(247,71,71,0.18),transparent_45%),linear-gradient(180deg,#0B0B0F_0%,#121212_60%,#0B0B0F_100%)]" />
       <div
@@ -125,16 +131,16 @@ export function Hero() {
         ))}
       </div>
 
-      <div className="section-container relative grid items-center gap-14 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+      <div className="section-container relative grid items-center gap-10 pb-16 pt-4 sm:gap-14 sm:pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         <div className="max-w-2xl">
           <span
             data-hero-badge
-            className="inline-flex items-center gap-2 rounded-full border border-gold/25 bg-gold/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-light"
+            className="inline-flex max-w-full items-center gap-2 rounded-2xl border border-gold/25 bg-gold/5 px-3 py-1.5 text-[10px] font-semibold uppercase leading-snug tracking-wide text-gold-light sm:rounded-full sm:px-4 sm:text-xs sm:tracking-[0.2em]"
           >
             Dgclub Login — India&apos;s Trusted Gaming Club
           </span>
 
-          <h1 className="mt-6 font-heading text-5xl font-extrabold leading-[1.05] text-cream sm:text-6xl lg:text-7xl">
+          <h1 className="mt-6 font-heading text-4xl font-extrabold leading-[1.08] text-cream sm:text-6xl lg:text-7xl">
             <span data-hero-line className="block">
               Play.
             </span>
@@ -151,14 +157,14 @@ export function Hero() {
             sports, fishing and live casino, all in one elevated experience.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
-            <span data-hero-cta>
-              <Button href="/register/" size="lg">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+            <span data-hero-cta className="sm:inline-block">
+              <Button href="/register/" size="lg" className="w-full sm:w-auto">
                 Register Now
               </Button>
             </span>
-            <span data-hero-cta>
-              <Button href="/download-app/" variant="secondary" size="lg">
+            <span data-hero-cta className="sm:inline-block">
+              <Button href="/download-app/" variant="secondary" size="lg" className="w-full sm:w-auto">
                 <DownloadIcon className="h-4 w-4" />
                 Download App
               </Button>
