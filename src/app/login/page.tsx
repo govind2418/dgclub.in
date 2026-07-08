@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { buildMetadata } from "@/lib/seo";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Container } from "@/components/ui/Container";
@@ -30,6 +31,22 @@ export default function LoginPage() {
         crumbName="Login"
         crumbPath="/login/"
       />
+
+      <Container className="pt-10 sm:pt-14">
+        <Reveal type="scale">
+          <div className="mx-auto max-w-4xl overflow-hidden rounded-[1.75rem] border border-gold/25 bg-elevated">
+            <div className="relative aspect-[900/461] w-full">
+              <Image
+                src="/login-banner.webp"
+                alt="Dg Club — login to India's premium gaming platform"
+                fill
+                sizes="(min-width: 1024px) 900px, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </Reveal>
+      </Container>
 
       <Container className="py-16 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">

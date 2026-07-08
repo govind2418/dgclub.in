@@ -29,9 +29,9 @@ export function Testimonials() {
           <AnimatePresence mode="wait">
             <motion.div
               key={current.name}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -16 }}
+              initial={{ y: 16 }}
+              animate={{ y: 0 }}
+              exit={{ y: -16 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
               <div className="flex justify-center gap-1 text-gold-light">

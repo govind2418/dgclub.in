@@ -171,7 +171,7 @@ export function Hero() {
           <div className="relative rounded-[1.75rem] bg-gradient-to-br from-gold-light via-gold to-gold-light/60 p-[2px]">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[calc(1.75rem-2px)] bg-elevated">
               <Image
-                src="/hero-banner.png"
+                src="/hero-banner.webp"
                 alt="Dg Club — India's premium gaming platform"
                 fill
                 priority
