@@ -172,25 +172,17 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Luxury framed hero visual */}
-        <div data-hero-frame className="relative mx-auto w-full max-w-md [perspective:1200px] lg:max-w-none">
-          <div className="relative rounded-[1.75rem] bg-gradient-to-br from-gold-light via-gold to-gold-light/60 p-[2px]">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[calc(1.75rem-2px)] bg-elevated">
-              <Image
-                src="/hero-banner.webp"
-                alt="Dg Club — India's premium gaming platform"
-                fill
-                priority
-                sizes="(min-width: 1024px) 45vw, 90vw"
-                className="object-cover"
-              />
-            </div>
-
-            {/* Corner accents */}
-            <span className="pointer-events-none absolute -left-1.5 -top-1.5 h-6 w-6 rounded-tl-xl border-l-2 border-t-2 border-gold-light" />
-            <span className="pointer-events-none absolute -right-1.5 -top-1.5 h-6 w-6 rounded-tr-xl border-r-2 border-t-2 border-gold-light" />
-            <span className="pointer-events-none absolute -bottom-1.5 -left-1.5 h-6 w-6 rounded-bl-xl border-b-2 border-l-2 border-gold-light" />
-            <span className="pointer-events-none absolute -bottom-1.5 -right-1.5 h-6 w-6 rounded-br-xl border-b-2 border-r-2 border-gold-light" />
+        {/* Hero visual — no frame/border, sized to the image's real aspect ratio so nothing gets cropped */}
+        <div data-hero-frame className="relative mx-auto w-full max-w-lg [perspective:1200px] lg:max-w-none">
+          <div className="relative aspect-[1000/548] w-full">
+            <Image
+              src="/hero-banner.webp"
+              alt="Dg Club — India's premium gaming platform"
+              fill
+              priority
+              sizes="(min-width: 1024px) 45vw, 90vw"
+              className="object-contain"
+            />
           </div>
         </div>
       </div>
