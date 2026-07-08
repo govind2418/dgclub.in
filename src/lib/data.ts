@@ -13,7 +13,13 @@ export const footerLinks = {
     { label: "About Us", href: "/about/" },
     { label: "Contact", href: "/contact/" },
     { label: "APK Guide", href: "/apk-guide/" },
-    { label: "Gift Code", href: "/gift-code/" },
+    { label: "Gift Codes", href: "/gift-code/" },
+  ],
+  resources: [
+    { label: "Dgclub India", href: "/dgclub-india/" },
+    { label: "Dgclub Salary", href: "/dgclub-salary/" },
+    { label: "Dgclub Withdrawal", href: "/dgclub-withdrawal/" },
+    { label: "Dgclub Game", href: "/dgclub-game/" },
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy-policy/" },

@@ -90,6 +90,13 @@ export default function LoginPage() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6 text-sm text-cream/50">
+                Wondering how fast payouts are once you're in?{" "}
+                <a href="/dgclub-withdrawal/" className="text-gold-light underline hover:no-underline">
+                  See how withdrawals work
+                </a>
+                .
+              </p>
             </GlassCard>
           </Reveal>
         </div>

@@ -50,6 +50,13 @@ export default function AboutPage() {
               premium as the rewards, and where speed and security are never an afterthought. We
               obsess over the details so you can focus on the game.
             </p>
+            <p className="mt-4 text-sm text-cream/50">
+              See how Dg Club is built specifically for{" "}
+              <a href="/dgclub-india/" className="text-gold-light underline hover:no-underline">
+                players across India
+              </a>
+              .
+            </p>
           </div>
         </Reveal>
 

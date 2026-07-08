@@ -9,8 +9,8 @@ import { CoinIcon } from "@/components/ui/icons";
 import { EXTERNAL_LOGIN_URL } from "@/lib/constants";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Gift Code — Redeem Rewards",
-  description: "Learn how to redeem Dg Club gift codes for bonus credit inside your account wallet.",
+  title: "Dgclub Gift Codes — How to Redeem",
+  description: "Learn how to redeem Dgclub gift codes for bonus credit inside your Dg Club account wallet.",
   path: "/gift-code/",
 });
 

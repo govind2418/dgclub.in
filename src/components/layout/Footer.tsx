@@ -9,7 +9,7 @@ export function Footer() {
 
   return (
     <footer className="relative border-t border-gold/10 bg-elevated">
-      <div className="section-container grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="section-container grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-5">
         <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
           <Logo />
           <p className="max-w-xs text-sm leading-relaxed text-cream/50">
@@ -32,6 +32,21 @@ export function Footer() {
           </h3>
           <ul className="flex flex-col gap-3">
             {footerLinks.company.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="text-sm text-cream/60 transition-colors hover:text-gold-light">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-gold-light">
+            Resources
+          </h3>
+          <ul className="flex flex-col gap-3">
+            {footerLinks.resources.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="text-sm text-cream/60 transition-colors hover:text-gold-light">
                   {link.label}

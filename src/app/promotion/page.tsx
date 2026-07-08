@@ -41,6 +41,13 @@ export default function PromotionPage() {
                 <li key={term}>• {term}</li>
               ))}
             </ul>
+            <p className="mt-4 text-sm leading-relaxed text-cream/55">
+              Wondering how referral commissions really work?{" "}
+              <a href="/dgclub-salary/" className="text-gold-light underline hover:no-underline">
+                Read the honest breakdown here
+              </a>
+              .
+            </p>
           </GlassCard>
         </Reveal>
       </Container>
