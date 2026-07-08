@@ -17,7 +17,7 @@ export default function Image() {
           justifyContent: "center",
           backgroundColor: "#0B0B0F",
           backgroundImage:
-            "radial-gradient(circle at 20% 20%, rgba(94,20,32,0.55), transparent 55%), radial-gradient(circle at 80% 0%, rgba(193,68,14,0.25), transparent 45%)",
+            "radial-gradient(circle at 20% 20%, rgba(107,16,25,0.55), transparent 55%), radial-gradient(circle at 80% 0%, rgba(247,71,71,0.2), transparent 45%)",
         }}
       >
         <div
@@ -28,7 +28,7 @@ export default function Image() {
             width: 110,
             height: 110,
             borderRadius: 28,
-            background: "linear-gradient(135deg, #F4C96B, #C99A3C)",
+            background: "linear-gradient(135deg, #F6C94A, #C99A3C)",
             fontSize: 56,
             fontWeight: 800,
             color: "#0B0B0F",
@@ -46,7 +46,7 @@ export default function Image() {
             color: "#FFF3D6",
           }}
         >
-          DG<span style={{ color: "#F4C96B" }}>CLUB</span>
+          DG<span style={{ color: "#F6C94A" }}>CLUB</span>
         </div>
         <div style={{ display: "flex", marginTop: 20, fontSize: 30, color: "rgba(255,243,214,0.65)" }}>
           Play. Win. Withdraw Instantly.

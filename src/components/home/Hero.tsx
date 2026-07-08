@@ -81,7 +81,7 @@ export function Hero() {
   return (
     <section ref={rootRef} className="relative flex min-h-[100svh] items-center overflow-hidden bg-base pt-28">
       {/* Background layer — placeholder cover banner. Swap for a real photo via <Image> when available. */}
-      <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_20%_20%,rgba(94,20,32,0.55),transparent_55%),radial-gradient(circle_at_80%_0%,rgba(193,68,14,0.25),transparent_45%),linear-gradient(180deg,#0B0B0F_0%,#121212_60%,#0B0B0F_100%)]" />
+      <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_20%_20%,rgba(107,16,25,0.55),transparent_55%),radial-gradient(circle_at_80%_0%,rgba(247,71,71,0.18),transparent_45%),linear-gradient(180deg,#0B0B0F_0%,#121212_60%,#0B0B0F_100%)]" />
       <div
         data-hero-ray
         className="pointer-events-none absolute -right-1/4 -top-1/3 -z-10 h-[140%] w-[140%] rotate-12 opacity-40"

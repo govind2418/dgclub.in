@@ -156,14 +156,14 @@ export function CheckIcon({ className }: IconProps) {
 export function CoinIcon({ className, style }: IconProps) {
   return (
     <svg viewBox="0 0 40 40" fill="none" className={className} style={style} aria-hidden="true">
-      <circle cx="20" cy="20" r="18" fill="url(#coin-grad)" stroke="#F4C96B" strokeWidth="1.5" />
+      <circle cx="20" cy="20" r="18" fill="url(#coin-grad)" stroke="#F6C94A" strokeWidth="1.5" />
       <circle cx="20" cy="20" r="13" stroke="#0B0B0F" strokeOpacity="0.25" strokeWidth="1.2" />
       <text x="20" y="25" textAnchor="middle" fontSize="14" fontWeight="700" fill="#0B0B0F" fontFamily="serif">
         D
       </text>
       <defs>
         <linearGradient id="coin-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#F4C96B" />
+          <stop stopColor="#F6C94A" />
           <stop offset="1" stopColor="#C99A3C" />
         </linearGradient>
       </defs>

@@ -17,7 +17,7 @@ export function DownloadAppSection() {
             <div className="absolute inset-0 -z-10 scale-110 rounded-[3rem] bg-gold/10 blur-2xl" />
             <div className="relative h-[420px] w-[220px] rounded-[2.5rem] border-4 border-surface bg-elevated p-2.5 shadow-soft sm:h-[480px] sm:w-[250px]">
               <div className="absolute left-1/2 top-3 h-1.5 w-14 -translate-x-1/2 rounded-full bg-base" />
-              <div className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-[2rem] bg-gradient-to-b from-maroon-deep via-base to-base px-4">
+              <div className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-[2rem] bg-gradient-to-b from-red-deep via-base to-base px-4">
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold-light to-gold text-2xl font-extrabold text-base">
                   D
                 </span>

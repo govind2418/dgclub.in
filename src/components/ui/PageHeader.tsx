@@ -15,7 +15,7 @@ export function PageHeader({
   crumbPath: string;
 }) {
   return (
-    <div className="relative overflow-hidden border-b border-gold/10 bg-[radial-gradient(circle_at_50%_0%,rgba(94,20,32,0.35),transparent_55%)]">
+    <div className="relative overflow-hidden border-b border-gold/10 bg-[radial-gradient(circle_at_50%_0%,rgba(107,16,25,0.35),transparent_55%)]">
       <Breadcrumbs items={[{ name: crumbName, path: crumbPath }]} />
       <Container className="pb-16 pt-8 sm:pb-20">
         {eyebrow && (

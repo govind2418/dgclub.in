@@ -10,16 +10,13 @@ const config: Config = {
         surface: "#1D1D1D",
         gold: {
           DEFAULT: "#C99A3C",
-          light: "#F4C96B",
+          light: "#F6C94A",
         },
         cream: "#FFF3D6",
-        maroon: {
-          DEFAULT: "#5E1420",
-          deep: "#3D0D16",
-        },
-        ember: {
-          DEFAULT: "#C1440E",
-          light: "#E06A2C",
+        red: {
+          DEFAULT: "#F74747",
+          light: "#FE6868",
+          deep: "#6B1019",
         },
       },
       fontFamily: {
